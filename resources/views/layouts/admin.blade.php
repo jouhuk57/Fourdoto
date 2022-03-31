@@ -21,6 +21,9 @@
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
+
+
+
 <script>
 $(function () {
     $(document).on( 'scroll', function(){
@@ -37,6 +40,7 @@ $(function () {
     });
 });</script>
 </head>
+
 
 <body  style="background:#eee;">
 <div class="header">
@@ -67,7 +71,9 @@ $(function () {
       <ul class="nav navbar-nav">
         <li><a href="dash.php?q=0">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="{{ route ('manager.user') }}">Users</a></li>
-		    <li><a href="dash.php?q=2">User Rankings</a></li>
+		    <li class="nav-item dropdown"><a href="dash.php?q=2">Main Stream</a></li>
+        <li class="nav-item dropdown"><a href="dash.php?q=2">Access Level</a></li>
+        <li class="nav-item dropdown"><a href="dash.php?q=2">Sub Stream</a></li>
         <li><a href="dash.php?q=3">Feedback</a></li>
         <li><a href="{{ route ('manager.question') }}">Question</a></li>
         
